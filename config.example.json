@@ -1,0 +1,22 @@
+{
+  "botId": "你的企业微信智能机器人 Bot ID",
+  "keychain": { "service": "wecom-codex-bridge", "account": "与 Bot ID 相同" },
+  "authorizedUsers": [],
+  "projects": [
+    { "id": "bridge", "name": "企业微信 Codex 桥接程序", "path": "/Users/你的用户名/项目目录" },
+    { "id": "another-project", "name": "另一个允许控制的项目", "path": "/Users/你的用户名/另一个项目" }
+  ],
+  "defaultProject": "bridge",
+  "databasePath": "./.data/bridge.sqlite",
+  "auditLogDirectory": "./logs/audit",
+  "auditMaxFileBytes": 52428800,
+  "auditRetentionDays": 30,
+  "adminEnabled": true,
+  "adminHost": "127.0.0.1",
+  "adminPort": 17321,
+  "codexCommand": "codex",
+  "model": "gpt-5.5",
+  "effort": null,
+  "streamIntervalMs": 900,
+  "progressIntervalMs": 30000
+}

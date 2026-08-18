@@ -1,0 +1,17 @@
+{
+  "name": "wecom-codex-local-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.mjs",
+    "start:echo": "node src/echo.mjs",
+    "check": "node --check src/main.mjs && node --check src/bridge.mjs && node --check src/codex-app-server.mjs && node --check src/admin-server.mjs && node --check src/admin-page.mjs",
+    "test": "node --test test/*.test.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "pack:release": "zsh scripts/package-release.zsh"
+  },
+  "dependencies": {
+    "@wecom/aibot-node-sdk": "1.0.6"
+  }
+}
